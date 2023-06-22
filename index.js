@@ -181,16 +181,28 @@ Orange, Apple, Banana, Cherry, Pineapple.
 
 We need to create a new list that contains Name and Fruit order alphabetically :
 
-Ex: Ana_Apple, Beti_Banana, Martin_Cherry. */
+Ex: Ana_Apple, Beti_Banana, Martin_Cherry. 
+
 
 let arr1 = ["Ana",  "Simona", "Beti", "Zoran", "Vlade", "Martin", "Mitre", "Mirko", "Viktor"]; //kreirani se dve nizi arr1 i arr2 so stringovi 
 let arr2 = ["Orange", "Apple", "Banana", "Cherry", "Pineapple"];
 let arr3 = arr1.concat(" ", arr2).sort(); /*kreirame treta niza arr3 kade shto kje ni gi ispechati dvete listi vo edna
 t.e arr1 join arr2 - so concat, potoa za sortiranjeto po azbuchen redosled 
-se koristi sort funkcija */
+se koristi sort funkcija
 document.getElementById("demo").innerHTML = arr3; //go zema id-to demo koe e zadadeno vo html i ja koristime tretata niza arr3 za da ni go prikazi rezultatot kade shto mu se zadadeni chekorite.
 
+*/
 
+let arr1 = ["Ana",  "Simona", "Beti", "Zoran", "Vlade", "Martin", "Mitre", "Mirko", "Viktor"];
+let arr2 = ["Orange", "Apple", "Banana", "Cherry", "Pineapple"];
+let arr3 = arr1.concat(" ", arr2).sort();;
+let i, len, text;
+
+for(
+    i = 0, len = arr3.length, text =" "; i < len; i++){
+        text += arr3[i] + "<br>";
+      };
+document.getElementById("demo").innerHTML = text;
 
 
 
