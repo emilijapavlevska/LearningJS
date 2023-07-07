@@ -428,8 +428,11 @@ else if (operator == '-') {
 else if (operator == '*') {
     result = firstNumber * secondNumber; 
 }
-else  {
+else if (operator == '/')  {
     result = firstNumber / secondNumber;
+}
+else {
+    prompt('Invalid input')
 }
 
 prompt('The result with ' + operator + ' is ' + result);
@@ -915,4 +918,527 @@ obj.increment;
 obj.decrement;
 document.getElementById("demo").innerHTML = obj.counter;
 */
+
+/*
+function Person(first, last, age, eye) {
+    this.firstName = first;
+    this.lastName = last;
+    this.yearAge = age;
+    this.eyeColor = eye;
+
+    this.name = function() {
+        return this.firstName + ' ' + this.lastName + ' ' + this.eyeColor
+    };
+}
+
+const person1 = new Person ('Marco', 'Williams', 20, 'blue');
+
+console.log(person1.name());
+*/
+/* proba da se dodaj i tret broj so drug operator
+const operator = prompt('enter operator: ');
+
+const firstNumber = Number(prompt('enter first number: '));
+const secondNumber = Number(prompt('enter second number'));
+
+let result;
+
+if(operator == '+'){
+    result = firstNumber + secondNumber;
+}
+else if (operator == '-') {
+    result = firstNumber - secondNumber;
+}
+else if (operator == '*') {
+    result = firstNumber * secondNumber; 
+}
+else if (operator == '/')  {
+    result = firstNumber / secondNumber;
+}
+else {
+    prompt('Invalid input')
+}
+
+
+prompt('do you want to continue y or n?');
+
+
+const operator1 = prompt('enter operator: ')
+const thirdNumber = Number(prompt('enter third number: '));
+let result1;
+if(operator == '+'){
+result1 = result + thirdNumber;
+}
+else if (operator1 == '-') {
+    result1 = result - thirdNumber;
+}
+else if (operator1 == '*'){
+    result1 = result * thirdNumber;
+
+}
+else if (operator1 == '/') {
+    result1 = result / thirdNumber;
+}
+else {
+    prompt('Invalid input')
+}
+
+prompt('The result with ' + operator1 + ' is ' + result1);
+
+*/
+/* THIS OBJ
+function chovek(ime, prezime, godini) {
+    this.celosnoIme = ime;
+    this.celosnoPrezime = prezime;
+    this.nGodini = godini;
+
+    this.kredencijali = function () {
+        return this.celosnoIme + ' ' + this.celosnoPrezime + ' ' + this.nGodini
+    };
+
+}
+
+const covek1 = new chovek('Ema', 'P', 23);
+const covek2 = new chovek('Kika', 'M', 23);
+
+document.getElementById('demo').innerHTML = covek2.kredencijali();
+*/
+/*
+const operator = prompt('enter operator: ');
+
+const firstNumber = Number(prompt('enter first number: '));
+const secondNumber = Number(prompt('enter second number'));
+
+let result;
+
+
+if(operator == '+'){
+    result = firstNumber + secondNumber;
+}
+else if (operator == '-') {
+    result = firstNumber - secondNumber;
+}
+else if (operator == '*') {
+    result = firstNumber * secondNumber; 
+}
+else if (operator == '/')  {
+    result = firstNumber[i] / secondNumber[i];
+}
+else {
+    prompt('Invalid input')
+}
+
+
+prompt('The result with ' + operator + ' is ' + result);
+
+*/
+
+/*
+let currentDate = new Date();
+let date2 = new Date(prompt('Enter a date: '));
+
+const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+
+function myFunction() {
+  let difference = date2.getTime() - currentDate.getTime();
+  let totalDays = Math.ceil(difference / (1000 * 3600 * 24));
+  return totalDays;
+}
+
+function formatDate(date) {
+
+  const day = date.getDate();
+  const month = date.getMonth() + 1;
+  const year = date.getFullYear();
+  const dayOfWeek = days[date.getDay()];
+
+  
+  return `${day}/${month}/${year} - ${dayOfWeek}`;
+}
+
+
+if(date2 >= currentDate) {
+console.log('Today is ' + formatDate(currentDate) + ', the difference is ' + myFunction() + ' days.');
+console.log('Input date is ' + formatDate(date2));
+}  
+
+else {
+    console.log('The date is unvalid!');
+}
+*/
+/*
+const operator = prompt('enter operator: ');
+
+const firstNumber = Number(prompt('enter first number: '));
+const secondNumber = Number(prompt('enter second number'));
+
+let result;
+
+if(operator == '+'){
+    result = firstNumber + secondNumber;
+}
+else if (operator == '-') {
+    result = firstNumber - secondNumber;
+}
+else if (operator == '*') {
+    result = firstNumber * secondNumber; 
+}
+else if (operator == '/')  {
+    result = firstNumber / secondNumber;
+}
+else {
+    prompt('Invalid input')
+}
+
+
+prompt('do you want to continue y or n?');
+
+
+const operator1 = prompt('enter operator: ')
+const thirdNumber = Number(prompt('enter third number: '));
+let result1;
+if(operator == '+'){
+result1 = result + thirdNumber;
+}
+else if (operator1 == '-') {
+    result1 = result - thirdNumber;
+}
+else if (operator1 == '*'){
+    result1 = result * thirdNumber;
+
+}
+else if (operator1 == '/') {
+    result1 = result / thirdNumber;
+}
+else {
+    prompt('Invalid input')
+}
+
+prompt('The result with ' + operator1 + ' is ' + result1);*/
+
+
+/*
+const operator = prompt('enter operator: ');
+const numbers = [];
+numbers.push(Number(prompt('Enter num1:')));
+numbers.push(Number(prompt('Enter num2:')));
+numbers.push(Number(prompt('Enter num3:')));
+numbers.push(Number(prompt('Enter num4:')));
+numbers.push(Number(prompt('Enter num5:')));
+
+let result;
+
+for(let i = 0; i < numbers.length; i++)
+
+if(operator === '+'){
+    result += numbers[i] ;
+}
+else if (operator === '-') {
+    result -= numbers[i] ;
+}
+else if (operator === '*') {
+    result *= numbers[i] ;
+}
+else if (operator === '/')  {
+    result /= numbers[i] ;
+}
+else {
+    prompt('Invalid input')
+}
+
+prompt('The result with ' + operator + ' is ' + result);
+
+*/
+/*
+const numbers = [];
+numbers.push(Number(prompt('Enter num1:')));
+numbers.push(Number(prompt('Enter num2:')));
+numbers.push(Number(prompt('Enter num3:')));
+numbers.push(Number(prompt('Enter num4:')));
+numbers.push(Number(prompt('Enter num5:')));
+
+const operator = prompt('Enter operator:');
+
+let result;
+
+for (let i = 0; i < numbers.length; i++) {
+  if (result === undefined) {
+    result = numbers[i];
+  } else {
+    if (operator === '+') {
+      result += numbers[i];
+    } else if (operator === '-') {
+      result -= numbers[i];
+    } else if (operator === '*') {
+      result *= numbers[i];
+    } else if (operator === '/') {
+      result /= numbers[i];
+    } else {
+      alert('Invalid operator');
+      result = undefined;
+      break;
+    }
+  }
+}
+
+if (result !== undefined) {
+  alert('The result with ' + operator + ' is ' + result);
+}
+*/
+//let a;
+//let b;
+
+/*
+const operator = (prompt('Vnesi operator / * + - '));
+
+let numbers = [];
+numbers.push(Number(prompt('Vnesi prv broj: ')));
+numbers.push(Number(prompt('Vnesi vtor broj: ')));
+numbers.push(Number(prompt('Vnesi tret broj: ')));
+numbers.push(Number(prompt('Vnesi chetvrt broj: ')));
+numbers.push(Number(prompt('Vnesi petti broj: ')));
+
+let result = 0;
+
+for(let i = 0; i < numbers.length; i++)
+
+if(operator === '+') {
+    result += numbers[i];
+}
+else if (operator === '-') {
+    result -= numbers[i];
+}
+else if (operator === '*') {
+    result *= numbers[i] ;
+}
+else if (operator === '/') {
+    result /= numbers[i] ;
+}
+else {
+    alert('Invalid input');
+    result = undefined
+    break;
+}
+
+alert('Dobieniot rezultat e:' +  result + ' so koristenje na operator' + operator);
+*/
+/*
+const operator = prompt('Vnesi operator / * + - ');
+
+let numbers = [];
+numbers.push(Number(prompt('Vnesi prv broj: ')));
+numbers.push(Number(prompt('Vnesi vtor broj: ')));
+numbers.push(Number(prompt('Vnesi tret broj: ')));
+numbers.push(Number(prompt('Vnesi chetvrt broj: ')));
+numbers.push(Number(prompt('Vnesi petti broj: ')));
+
+let result;
+
+if (operator === '+') {
+  result = 0;
+  for (let i = 0; i < numbers.length; i++) {
+    result += numbers[i];
+  }
+} else if (operator === '-') {
+  result = numbers[0];
+  for (let i = 0; i < numbers.length; i++) {
+    result -= numbers[i];
+  }
+} else if (operator === '*') {
+  result = numbers[0];
+  for (let i = 0; i < numbers.length; i++) {
+    result *= numbers[i];
+  }
+} else if (operator === '/') {
+  result = numbers[0];
+  for (let i = 0; i < numbers.length; i++) {
+    result /= numbers[i];
+  }
+} else {
+  alert('Invalid input');
+  result = undefined;
+}
+
+document.getElementById('demo').innerHTML = numbers && result;
+
+// da gi ispechati vo tabela vnesenite brojki i sumata
+
+*/
+
+//CALLBACK function
+/*
+function myFunction(name, surname) {
+    console.log('Moeto ime e ' + name);
+    surname();
+}
+
+function callMeLater() {
+    console.log('A moeto prezime e Pavlevka');
+}
+
+myFunction('Emma', callMeLater);
+
+*/
+
+/* callback, timeout
+function myFunction(a){
+    a = 2;
+    console.log(a * a);
+    
+}
+
+function povikajMe(b,d){
+    
+    console.log(b * d);
+
+}
+
+setTimeout(myFunction, 3000);
+povikajMe(2,5);
+*/
+
+// Promise
+/*
+const count = true;
+
+let countValue = new Promise (function (resolve, reject) {
+    if (count) {
+        resolve('there is a count value');
+    }
+    else {
+        reject('there is not a count value');
+    }
+}
+);
+
+countValue
+.then(function successValue(result){
+    console.log(result);
+}
+)
+
+.then(function successValue1(){
+    console.log('you can call multiple functions')
+} )
+ */
+/*
+const operator = prompt('Vnesi operator / * + - ');
+
+let numbers = [];
+numbers.push(Number(prompt('Vnesi prv broj: ')));
+numbers.push(Number(prompt('Vnesi vtor broj: ')));
+numbers.push(Number(prompt('Vnesi tret broj: ')));
+numbers.push(Number(prompt('Vnesi chetvrt broj: ')));
+numbers.push(Number(prompt('Vnesi petti broj: ')));
+
+let result;
+
+if (operator === '+') {
+  result = 0;
+  for (let i = 0; i < numbers.length; i++) {
+    result += numbers[i];
+  }
+} else if (operator === '-') {
+  result = numbers[0];
+  for (let i = 0; i < numbers.length; i++) {
+    result -= numbers[i];
+  }
+} else if (operator === '*') {
+  result = numbers[0];
+  for (let i = 0; i < numbers.length; i++) {
+    result *= numbers[i];
+  }
+} else if (operator === '/') {
+  result = numbers[0];
+  for (let i = 0; i < numbers.length; i++) {
+    result /= numbers[i];
+  }
+} else {
+  alert('Invalid input');
+  result = undefined;
+}
+
+let numNres = '<ul>';
+for (let i = 0; i < numbers.length; i++) {
+    numNres += '<li>' + numbers[i] + '</li>';
+}
+numNres += '<li> Rezultat: ' + result + '</li>';
+numNres += '</ul>';
+document.getElementById('demo').style.fontSize = "20px";
+document.getElementById('demo').style.color = "pink";
+document.getElementById('demo').innerHTML = numNres;
+
+*/
+
+/*
+
+const students = ['Trajko Trajkovski', 'Petko Petkovski', 'Milka Bijelik'];
+
+
+for (let i = 0; i < students.length; i++){
+ if(students[i]==='Milka Bijelik')
+ console.log(students[i] +' your ID is ' + i );
+}
+*/
+const operator = prompt('Vnesi operator / * + - ');
+
+let numbers = [];
+numbers.push(Number(prompt('Vnesi prv broj: ')));
+numbers.push(Number(prompt('Vnesi vtor broj: ')));
+numbers.push(Number(prompt('Vnesi tret broj: ')));
+numbers.push(Number(prompt('Vnesi chetvrt broj: ')));
+numbers.push(Number(prompt('Vnesi petti broj: ')));
+
+let result;
+
+if (operator === '+') {
+  result = 0;
+  for (let i = 0; i < numbers.length; i++) {
+    result += numbers[i];
+  }
+} else if (operator === '-') {
+  result = numbers[0];
+  for (let i = 0; i < numbers.length; i++) {
+    result -= numbers[i];
+  }
+} else if (operator === '*') {
+  result = numbers[0];
+  for (let i = 0; i < numbers.length; i++) {
+    result *= numbers[i];
+  }
+} else if (operator === '/') {
+  result = numbers[0];
+  for (let i = 0; i < numbers.length; i++) {
+    result /= numbers[i];
+  }
+} else {
+  alert('Invalid input');
+  result = undefined;
+}
+
+let numNres = '<ul>';
+for (let i = 0; i < numbers.length; i++) {
+    numNres += '<li>' + numbers[i] + '</li>';
+}
+numNres += '<li> Rezultat: ' + result + '</li>';
+numNres += '</ul>';
+document.getElementById('demo').style.fontSize = "20px";
+document.getElementById('demo').style.color = "pink";
+document.getElementById('demo').innerHTML = numNres;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
